@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+        <title>Landing Page</title>
+    </head>
+    <body>
+        <div class="top-banner"><img class="topb-image" src="treu-flags.png" alt=""></div>
+        <nav>
+            <div id="logo"><img class="logo-image" src="SKUP-Vertical-Logo.png"></div>
+            <div class="nav-links">
+                <a href="about.html" id="about">About</a>
+                <a href="#" id="know">Knowledge Center</a>
+                <a href="#" id="news">News and Events</a>
+                <a href="#" id="media">Sumps in Media</a>
+                <a href="#" id="intr">Sumps in TR</a>
+                <a href="https://www.tbb.gov.tr/Tr/icerik_avrupa-hareketlilik-haftasi_483" id="emw">EMW in TR</a>
+                <a id="language-switch" href="#">EN / TR</a>
+            </div>
+        </nav>
+        <div class="main-content"></div>
+            <div class="showcase">
+                <video class="background-video" autoplay muted loop>
+                    <source src="video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="showcase-txt">
+                    <div class="sc-title" id="sc-title">EU Support for Promoting Sustainable Urban Mobility in Turkish Cities</div>
+                    <div class="sc-p" id="sc-p">The overall objective of SUMP Türkiye is to promote individual transport to sustainable, accessible, and inclusive modes of sustainable urban mobility in Turkish cities. To this end, the project aims to support the communication and permanent policy dialogue on sustainable urban mobility among Turkish and EU stakeholders; to build capacities among planners and decision-makers for strategic and integrated sustainable mobility policy solutions; and to enhance the visibility of sustainable urban mobility.</div>
+                    <div class="social-buttons">
+                        <a href="https://www.instagram.com/skupturkiye/" target="_blank" class="btn"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@skupturkiye" target="_blank" class="btn"><i class="fab fa-youtube"></i></a>
+                        <a href="https://twitter.com/skupturkiye" target="_blank" class="btn"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/company/skup-turkiye/" target="_blank" class="btn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                <div class="showcase-img">
+                    <div class="box"></div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="ftr">
+                <div class="ftr-txt" id="ftr-txt">Disclaimer: "This web site has been produced with the financial assistance of the European Union and the Republic of Türkiye. <br>
+                    The contents of this web site are the sole responsibility of the consortium led by Rupprecht Consult and can in no way be taken to reflect the views of the European Union, the Republic of Türkiye."</div>
+            </div>
+        </footer>
+        <div class="bottom-banner"><img class="lowb-image" src="footer-logo.png" alt=""></div>
+    </body>
+    <script>
+        document.getElementById('language-switch').addEventListener('click', switchLanguage);
+        const translations = {
+            'sc-title': {
+                en: 'EU Support for Promoting Sustainable Urban Mobility in Turkish Cities',
+                tr: 'Türk Şehirlerinde Sürdürülebilir Kentsel Hareketliliği Destekleyen AB'
+            },
+            'sc-p': {
+                en: "The overall objective of SUMP Türkiye is to promote individual transport to sustainable, accessible, and inclusive modes of sustainable urban mobility in Turkish cities. To this end, the project aims to support the communication and permanent policy dialogue on sustainable urban mobility among Turkish and EU stakeholders; to build capacities among planners and decision-makers for strategic and integrated sustainable mobility policy solutions; and to enhance the visibility of sustainable urban mobility.",
+                tr: "SUMP Türkiye'nin genel hedefi, Türk şehirlerinde bireysel ulaşımı sürdürülebilir, erişilebilir ve kapsayıcı sürdürülebilir kentsel hareketlilik modlarına teşvik etmektir. Bu amaçla, proje Türk ve AB paydaşları arasında sürdürülebilir kentsel hareketlilik konusunda iletişimi ve kalıcı politika diyalogunu desteklemeyi; planlamacılar ve karar vericiler arasında stratejik ve bütünleşik sürdürülebilir hareketlilik politikası çözümleri için kapasite oluşturmayı; ve sürdürülebilir kentsel hareketliliğin görünürlüğünü artırmayı amaçlamaktadır."
+            },
+            'ftr-txt': {
+                en: 'Disclaimer: "This web site has been produced with the financial assistance of the European Union and the Republic of Türkiye.The contents of this web site are the sole responsibility of the consortium led by Rupprecht Consult and can in no way be taken to reflect the views of the European Union, the Republic of Türkiye.',
+                tr: `Not: "Bu web sitesi, Avrupa Birliği ve Türkiye Cumhuriyeti'nin maddi yardımıyla hazırlanmıştır. 
+                Bu web sitesinin içeriği, Rupprecht Consult tarafından yönetilen konsorsiyumun tek sorumluluğundadır ve hiçbir şekilde Avrupa Birliği veya Türkiye Cumhuriyeti'nin görüşlerini yansıtmamaktadır."`
+            },
+            'about': {
+                en: "About",
+                tr: "Hakkında"
+            },
+            'know': {
+                en: "Knowledge Center",
+                tr: "Bilgi Merkezi"
+            },
+            'news': {
+                en: "News and Events",
+                tr: "Haberler ve Etkinlikler"
+            },
+            'media': {
+                en: "Sumps in Media",
+                tr: "Medyada Sumps"
+            },
+            'intr': {
+                en: "Sumps in TR",
+                tr: "Sumps TR'de"
+            },
+            'emw': {
+                en: "Sumps in TR",
+                tr: "Sumps TR'de"
+            }
+            // Add more translations here
+        }
+        let currentLanguage = 'en';
+        function switchLanguage() {
+            if (currentLanguage === 'en') {
+                currentLanguage = 'tr';
+            } else {
+                currentLanguage = 'en';
+            }
+            for (const elementId in translations) {
+                const element = document.getElementById(elementId);
+                if (element) {
+                element.textContent = translations[elementId][currentLanguage];
+                }
+            }
+        }
+        </script>
+        
+</html>
